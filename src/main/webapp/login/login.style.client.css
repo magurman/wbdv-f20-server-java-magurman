@@ -1,0 +1,56 @@
+.sign-in-header {
+    text-align: center;
+    color: cadetblue;
+}
+
+.form-username-password {
+    border: 3px solid cadetblue;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.wbdv-field {
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.wbdv-button {
+
+}
+
+.wbdv-link {
+    color: cadetblue;
+}
+
+.wbdv-username {
+    background-color: cadetblue;
+    color: white;
+}
+
+.wbdv-password {
+    background-color: cadetblue;
+}
+
+.wbdv-login {
+    text-align: center;
+}
+
+.wbdv-forgot-password {
+
+}
+
+.wbdv-register {
+}
+
+.wbdv-cancel {
+
+}
+
+.center_div{
+    margin: 0 auto;
+    width:80% /* value of your choice which suits your alignment */
+}
+
