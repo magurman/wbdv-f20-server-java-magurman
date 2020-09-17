@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="register.style.client.css" rel="stylesheet">
+    <link href="../login/login.style.client.css" rel="stylesheet">
+
 </head>
 <body>
+<div class="container">
+    <h1 class="register-header">Register</h1>
+    <form class="form-register">
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="usernameFld">
+                Username:
+            </label>
+            <div class="col-sm-10">
+                <input class="form-control wbdv-field wbdv-username"
+                                 id="usernameFld"
+                                 placeholder="Username..."/>
+            </div>
+
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="passwordFld">
+                Password:
+            </label>
+            <div class="col-sm-10">
+                <input class="form-control wbdv-field wbdv-password"
+                       id="passwordFld"
+                       placeholder="..."/>
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="verifyPasswordFld">
+                Verify Password:
+            </label>
+
+            <div class="col-sm-10">
+                <input class="form-control wbdv-field wbdv-password-verify"
+                       id="verifyPasswordFld"
+                       placeholder="..."/>
+            </div>
+
+        </div>
+        <div class="form-group row justify-content-center">
+            <button class="btn btn-outline-primary wbdv-button wbdv-register" id="registerBtn">Register
+            </button>
+        </div>
+    </form>
+
+    <div class=" row container justify-content-center">
+        <a href="../login/login.template.client.html" class="wbdv-link wbdv-login" >Login</a>
+    </div>
+</div>
 
 </body>
 </html>

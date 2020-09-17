@@ -1,0 +1,14 @@
+.register-header {
+    text-align: center;
+    color: cadetblue;
+}
+
+.form-register {
+    border: 3px solid cadetblue;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.wbdv-login {
+    text-align: center;
+}
