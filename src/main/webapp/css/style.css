@@ -2,6 +2,51 @@ h1 {
     background-color: white;
 }
 
+/*a {*/
+/*    line-height: 1em;*/
+/*    display: inline-block;*/
+/*    text-decoration: none;*/
+/*    padding: 120px;*/
+/*    margin: 42px;*/
+/*}*/
+
 .form-label {
     margin-bottom: 10px;
+}
+
+.wbdv-label {
+    justify-content: left;
+}
+
+table {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+thead {
+    flex: 0 0 auto;
+    position: sticky;
+}
+
+th {
+    flex: 0 0 auto;
+    position: sticky;
+}
+
+tbody {
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+tr {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.wbdv-header {
+
 }
