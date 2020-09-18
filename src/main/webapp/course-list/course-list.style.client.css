@@ -13,3 +13,33 @@
 .wbdv-last-modified {
 
 }
+
+.wbdv-date-header {
+    color: cadetblue;
+    background-color: beige;
+    padding-bottom: 5px;
+}
+
+.wbdv-course-list-table {
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+th {
+    padding: 0.25em 0.5em 0.25em 1em;
+    vertical-align: text-top;
+    text-align: left;
+    text-indent: -0.5em;
+}
+
+.wbdv-header {
+    white-space: nowrap;
+    width: 1%;
+}
+
+li {
+    float: left;
+}
+
+
