@@ -5,9 +5,30 @@
     <title>Update Profile</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="../css/style.css" rel="stylesheet">
-    <link href="login.style.client.css" rel="stylesheet">
+    <link href="profile.style.client.css" rel="stylesheet">
 </head>
 <body>
+
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4" style="margin: 0px">
+                <ul class="collapse-ul">
+                    <li>
+                        <a href="../course-list/course-list.template.client.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="../profile/profile.template.client.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
     <div class="container">
         <h1>Profile</h1>
         <form>
@@ -22,10 +43,21 @@
             </div>
 
             <div class="form-group row">
+                <label for="password" class="col-sm-2 col-form-label">
+                    Password </label>
+                <div class="col-sm-10">
+                    <input class="form-control wbdv-field wbdv-password col-sm-*"
+                           id="password"
+                           placeholder="..."
+                           type="password">
+                </div>
+            </div>
+
+            <div class="form-group row">
                 <label for="phone" class="col-sm-2 col-form-label">
                     Phone </label>
                 <div class="col-sm-10">
-                    <input class="form-control col-sm-*"
+                    <input class="form-control col-sm-* wbdv-phone wbdv-field"
                            id="phone"
                            placeholder="(012)-345-6789">
                 </div>
@@ -35,7 +67,7 @@
                     Email
                 </label>
                 <div class="col-sm-10">
-                    <input class="form-control col-sm-*"
+                    <input class="form-control col-sm-* wbdv-field wbdv-email"
                            id="email"
                            placeholder="example@me.com">
                 </div>
@@ -45,7 +77,7 @@
                     Role
                 </label>
                 <div class="col-sm-10">
-                    <select class="form-control" id="role">
+                    <select class="form-control wbdv-field wbdv-role" id="role">
                         <option>Faculty</option>
                         <option>Student</option>
                         <option>Administration</option>
@@ -57,21 +89,24 @@
                     Date of Birth
                 </label>
                 <div class="col-sm-10">
-                    <input class="form-control col-sm-*"
+                    <input class="form-control col-sm-* wbdv-field wbdv-dob"
                            id="dob"
                            type="date">
                 </div>
             </div>
 
             <div class="form-group row justify-content-center">
-                <a class="btn btn-success" href = "#">Update</a>
+                <a class="btn btn-success wbdv-button wbdv-update" href = "#">Update</a>
             </div>
             <div class="form-group row justify-content-center">
-                <a class="btn btn-danger" href = "../index.html">Logout</a>
+                <a class="btn btn-danger wbdv-button wbdv-logout" href = "../index.html">Logout</a>
             </div>
         </form>
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
 </body>
 </html>
 

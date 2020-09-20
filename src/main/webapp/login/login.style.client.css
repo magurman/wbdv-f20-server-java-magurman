@@ -6,37 +6,10 @@
 .form-username-password {
     /*border: 3px solid cadetblue;*/
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-.wbdv-field {
-    color: white;
-    border-style: solid;
-    border-color: black;
-    border-radius: 10px;
-    background-color: cadetblue;
-}
 
-.wbdv-button {
-
-}
-
-.wbdv-link {
-    color: cadetblue;
-}
-
-.wbdv-username {
-    background-color: cadetblue;
-    color: white;
-}
-
-.wbdv-password {
-    background-color: cadetblue;
-}
-
-.wbdv-login {
-    text-align: center;
-}
 
 .wbdv-forgot-password {
 
@@ -46,7 +19,6 @@
 }
 
 .wbdv-cancel {
-
 }
 
 .center_div{

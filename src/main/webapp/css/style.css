@@ -1,14 +1,10 @@
 h1 {
-    background-color: white;
+
 }
 
-/*a {*/
-/*    line-height: 1em;*/
-/*    display: inline-block;*/
-/*    text-decoration: none;*/
-/*    padding: 120px;*/
-/*    margin: 42px;*/
-/*}*/
+body {
+    background-color: antiquewhite;
+}
 
 .form-label {
     margin-bottom: 10px;
@@ -47,6 +43,40 @@ tr {
     table-layout: fixed;
 }
 
+.wbdv-login {
+    text-align: center;
+}
+
 .wbdv-header {
 
 }
+
+.wbdv-username {
+    color: white;
+}
+
+.wbdv-password {
+}
+
+.wbdv-field {
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.wbdv-hamburger {
+    padding: 5px;
+}
+
+.wbdv-button {
+
+}
+
+.wbdv-link {
+    color: cadetblue;
+}
+
+.collapse-ul {
+    list-style-type: none;
+}
+

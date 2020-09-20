@@ -7,215 +7,212 @@
     <link href="../css/style.css" rel="stylesheet">
     <link href="course-list.style.client.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4d71a00134.js" crossorigin="anonymous"></script>
-
-
-
 </head>
 <body>
 
-<div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <h4 class="text-white">Collapsed content</h4>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
+        <div class="p-4">
+            <ul class="collapse-ul">
+                <li>
+                    <a href="../course-list/course-list.template.client.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="../profile/profile.template.client.html">Profile</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-light justify-content-center">
+        <button class="navbar-toggler wbdv-field wbdv-hamburger" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <h3 class="wbdv-label wbdv-course-manager">Course Manager</h3>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" size="75" type="search" placeholder="New Course Title" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Create</button>
+        </form>
     </nav>
-</div>
 
-<!--    <div class="pos-f-t">-->
-<!--        <div class="collapse" id="#navbarToggleExternalContent">-->
-<!--            <div class="bg-dark p-4">-->
-<!--                <h5 class="text-white h4">Collapsed content</h5>-->
-<!--                <span class="text-muted">Toggleable via the navbar brand.</span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
-
-<!--            <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-<!--                <ul class="navbar-nav mr-auto">-->
-<!--                    <li class="nav-item active">-->
-<!--                        <span class="navbar-text">-->
-<!--                            Course Manager-->
-<!--                        </span>-->
-<!--                    </li>-->
-
-<!--                    <form class="form-inline my-2 my-lg-0">-->
-<!--                        <input class="form-control mr-sm-2" size="75" type="search" placeholder="New Course Title" aria-label="Search">-->
-<!--                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Create</button>-->
-<!--                    </form>-->
-
-<!--                </ul>-->
-
-<!--            </div>-->
-<!--        </nav>-->
-<!--    </div>-->
 
     <div class="container">
-        <table class="table wbdv-course-list-table w-auto ">
+        <table class="table table-curved wbdv-course-list-table w-auto ">
                         <thead class="thead-dark">
                             <tr>
-                                <th class="wbdv-owner" scope="col" >Title</th>
-                                <th scope="col-sm-2">Owned By</th>
-                                <th scope="col-sm-2">Last Modified By Me</th>
-                                <th scope="col-sm-2"><i class="fas fa-sort-alpha-up"></i> </th>
-                                <th scope="col-sm-2"><i class="fas fa-th-large"></i></th>
+                                <th class="wbdv-header wbdv-title" scope="col" >Title</th>
+                                <th class="wbdv-header wbdv-owner" scope="col-sm-2">Owned By</th>
+                                <th class="wbdv-header wbdv-last-modified" scope="col-sm-2">Last Modified By Me </th>
+                                <th class="wbdv-button wbdv-grid-layout" scope="col-sm-2"><i class="fas fa-sort-alpha-up fa-1.5x wbdv-header wbdv-sort"></i> </th>
+                                <th class="wbdv-button wbdv-list-layout" scope="col-sm-2"><i class="fas fa-th-large fa-1.5x"></i></th>
                             </tr>
                         </thead>
 
             <tbody>
             <tr class="">
-                <td class="wbdv-date-header"><h5>Today</h5></td>
+                <td class="wbdv-header wbdv-sort"><h5>Today</h5></td>
             </tr>
-            <tr onclick="window.location='../course-edit/course-edit.template.client.html';">
-                <td>
+            <tr class="wbdv-row wbdv-course">
+                <td class="wbdv-row wbdv-title">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-2">
-                                <i class="fas fa-chalkboard"></i>
+                                <i class="fas fa-chalkboard wbdv-row wbdv-icon"></i>
                             </div>
-                            <div class="col-sm-10">CS 5500 Foundations of Software Engineering</div>
+                            <div class="col-sm-10"><a href="../course-edit/course-edit.template.client.html">
+                                CS 5500 Foundations of Software Engineering
+                                                    </a>
+                            </div>
                         </div>
                     </div>
                 </td>
-                <td>Me</td>
-                <td>6:00 PM</td>
-                <td><button type="button" class="close" aria-label="Close">
+                <td class="wbdv-row wbdv-owner">Me</td>
+                <td class="wbdv-row wbdv-modified-date">6:00 PM</td>
+                <td class="wbdv-row wbdv-button wbdv-delete"><button type="button" class="close" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button></td>
+            </tr>
+            <tr class="wbdv-row wbdv-course">
+                <td class="wbdv-row wbdv-title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <i class="fas fa-chalkboard wbdv-row wbdv-icon"></i>
+                            </div>
+                            <div class="col-sm-10"><a href="../course-edit/course-edit.template.client.html">
+                                CS 5610 Web Development</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="wbdv-row wbdv-owner">Me</td>
+                <td class="wbdv-row wbdv-modified-date">5:42 PM</td>
+                <td class="wbdv-row wbdv-button wbdv-delete"><button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button></td>
+            </tr>
+            <tr class="wbdv-row wbdv-course">
+                <td class="wbdv-row wbdv-title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <i class="fas fa-chalkboard wbdv-row wbdv-icon"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <a href="../course-edit/course-edit.template.client.html">
+                                    CS 5200 Database Design and Management</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="wbdv-row wbdv-owner">Me</td>
+                <td class="wbdv-row wbdv-modified-date">8:19 AM</td>
+                <td class="wbdv-row wbdv-button wbdv-delete"><button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button></td>
+            </tr>
 
-            </tr>
-            <tr>
-                <td>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <i class="fas fa-chalkboard"></i>
-                            </div>
-                            <div class="col-sm-10">
-                                CS 5610 Web Development
-                            </div>
-                        </div>
-                    </div>
-                </td>
-                <td>Me</td>
-                <td>5:42PM</td>
-                <td><button type="button" class="close" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button></td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <i class="fas fa-chalkboard"></i>
-                            </div>
-                            <div class="col-sm-10">
-                                CS 5200 Database Design and Management
-                            </div>
-                        </div>
-                    </div>
-                </td>
-                <td>Me</td>
-                <td>8:19 AM</td>
-                <td><button type="button" class="close" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button></td>
-            </tr>
+
+
             </tbody>
         </table>
 
         <table class="table wbdv-course-list-table">
             <tbody>
+
                 <tr>
-                    <td class="wbdv-date-header"><h5>Yesterday</h5></td>
+                    <td class="wbdv-header wbdv-sort"><h5>Yesterday</h5></td>
                 </tr>
-                <tr>
-                    <td>
+
+                <tr class="wbdv-row wbdv-course">
+                    <td class="wbdv-row wbdv-title">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <i class="fas fa-chalkboard"></i>
+                                    <i class="fas fa-chalkboard wbdv-row wbdv-icon"></i>
                                 </div>
                                 <div class="col-sm-10">
-                                    CS 5800 Algorithms
+                                    <a href="../course-edit/course-edit.template.client.html">
+                                        CS 5800 Algorithms</a>
                                 </div>
                             </div>
                         </div>
                     </td>
-                    <td>Me</td>
-                    <td>September 16, 2020</td>
-                    <td><button type="button" class="close" aria-label="Close">
+                    <td class="wbdv-row wbdv-owner">Me</td>
+                    <td class="wbdv-row wbdv-modified-date">September 16, 2020</td>
+                    <td class="wbdv-row wbdv-button wbdv-delete"><button type="button" class="close" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button></td>
                 </tr>
-                <tr>
-                    <td>
+
+                <tr class="wbdv-row wbdv-course">
+                    <td class="wbdv-row wbdv-title">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-2">
-                                    <i class="fas fa-chalkboard"></i>
+                                    <i class="fas fa-chalkboard wbdv-row wbdv-icon"></i>
                                 </div>
                                 <div class="col-sm-10">
-                                    CS 5004 Object Oriented Design
+                                    <a href="../course-edit/course-edit.template.client.html">
+                                        CS 5004 Object Oriented Design</a>
                                 </div>
                             </div>
                         </div>
                     </td>
-                    <td>Me</td>
-                    <td>September 16, 2020</td>
-                    <td><button type="button" class="close" aria-label="Close">
+                    <td class="wbdv-row wbdv-owner">Me</td>
+                    <td class="wbdv-row wbdv-modified-date">September 16, 2020</td>
+                    <td class="wbdv-row wbdv-button wbdv-delete"><button type="button" class="close" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button></td>
                 </tr>
+
+
             </tbody>
         </table>
 
         <table class="table wbdv-course-list-table">
             <tbody>
             <tr>
-                <td class="wbdv-date-header"><h5>Last 7 Days</h5></td>
+                <td class="wbdv-header wbdv-sort"><h5>Last 7 Days</h5></td>
             </tr>
-            <tr>
-                <td>
+            <tr class="wbdv-row wbdv-course">
+                <td class="wbdv-row wbdv-title">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-2">
-                                <i class="fas fa-chalkboard"></i>
+                                <i class="fas fa-chalkboard wbdv-row wbdv-icon"></i>
                             </div>
                             <div class="col-sm-10">
-                                CS 5006 Computer Systems
+                                <a href="../course-edit/course-edit.template.client.html">
+                                    CS 5006 Computer Systems</a>
                             </div>
                         </div>
                     </div>
                 </td>
-                <td>Me</td>
-                <td>September 13, 2020</td>
-                <td><button type="button" class="close" aria-label="Close">
+                <td class="wbdv-row wbdv-owner">Me</td>
+                <td class="wbdv-row wbdv-modified-date">September 13, 2020</td>
+                <td class="wbdv-row wbdv-button wbdv-delete"><button type="button" class="close" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button></td>
             </tr>
-            <tr>
-                <td>
+
+            <tr class="wbdv-row wbdv-course">
+                <td class="wbdv-row wbdv-title">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-2">
-                                <i class="fas fa-chalkboard"></i>
+                                <i class="fas fa-chalkboard wbdv-row wbdv-icon"></i>
                             </div>
                             <div class="col-sm-10">
-                                CS 5008 Algorithms Bridge
+                                <a href="../course-edit/course-edit.template.client.html">
+                                    CS 5008 Algorithms Bridge</a>
                             </div>
                         </div>
                     </div>
                 </td>
-                <td>Me</td>
-                <td>September 12, 2020</td>
-                <td><button type="button" class="close" aria-label="Close">
+                <td class="wbdv-row wbdv-owner">Me</td>
+                <td class="wbdv-row wbdv-modified-date">September 12, 2020</td>
+                <td class="wbdv-row wbdv-button wbdv-delete"><button type="button" class="close" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button></td>
             </tr>

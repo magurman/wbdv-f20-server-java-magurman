@@ -1,5 +1,7 @@
 .wbdv-course-manager {
-    justify-content: left;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
 }
 
 .wbdv-owner {
@@ -14,10 +16,12 @@
 
 }
 
-.wbdv-date-header {
-    color: cadetblue;
-    background-color: beige;
-    padding-bottom: 5px;
+.wbdv-grid-layout {
+    text-align: right;
+}
+
+.wbdv-list-layout {
+
 }
 
 .wbdv-course-list-table {
@@ -35,11 +39,43 @@ th {
 
 .wbdv-header {
     white-space: nowrap;
-    width: 1%;
+    text-align: center;
 }
+
 
 li {
-    float: left;
+    padding-bottom: 10px;
+    padding-right: 50px;
 }
 
+nav {
+    background-color: antiquewhite;
+}
+
+
+.wbdv-sort {
+    background-color: beige;
+    padding-bottom: 5px;
+}
+
+.wbdv-row {
+
+}
+
+.wbdv-course {
+
+}
+
+.wbdv-modified-date {
+
+}
+
+form {
+    padding: 5px;
+}
+
+
+h5 {
+    padding: 3px;
+}
 
