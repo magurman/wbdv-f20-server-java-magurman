@@ -12,44 +12,43 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="btn btn-lg wbdv-course-editor wbdv-close"><i class="fas fa-times"></i></button>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a href="../course-list/course-list.template.client.html" class="btn btn-lg wbdv-course-editor wbdv-close"><i class="fas fa-times"></i></a>
         <a class="navbar-brand wbdv-course-title" href="#">CS 5500 Foundations of Software Engineering</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div style="width: 100%"
-             id="navbarNavAltMarkup"
-             class="collapse navbar-collapse">
+        <div id="navbarNavAltMarkup"
+             class="collapse navbar-collapse top-navbar">
 
             <a class="nav-item nav-link active wbdv-lesson-tabs" href="#">Build <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link wbdv-lesson-tabs" href="#">Pages</a>
+            <a style="background-color: darksalmon" class="nav-item nav-link wbdv-lesson-tabs" href="#">Pages</a>
             <a class="nav-item nav-link wbdv-lesson-tabs" href="#">Theme</a>
-            <a class="nav-item nav-link disabled wbdv-lesson-tabs" href="#">Store</a>
-            <a class="nav-item nav-link disabled wbdv-lesson-tabs" href="#">Apps</a>
-            <a class="nav-item nav-link disabled wbdv-lesson-tabs" href="#">Settings</a>
+            <a class="nav-item nav-link wbdv-lesson-tabs" href="#">Store</a>
+            <a class="nav-item nav-link wbdv-lesson-tabs" href="#">Apps</a>
+            <a class="nav-item nav-link wbdv-lesson-tabs" href="#">Settings</a>
             <button type="button" class="btn btn-lg wbdv-lesson-add-btn">
-                <i class="fas fa-plus-circle" style="color: red"></i>
+                <i class="fas fa-plus-circle fa-lg"></i>
             </button>
         </div>
     </nav>
 
     <div class="container-fluid">
         <div class="row">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block bg-light sidebar collapse">
-                <div class="sidebar-sticky pt-3">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse" >
+                <div class="sidebar-sticky pt-3" >
                     <ul class="nav flex-column wbdv-module-list">
-                        <li class="nav-item wbdv-module-item" >
+                        <li class="nav-item wbdv-module-item rounded" >
                             <div class="row" style="flex-wrap: nowrap; justify-content: space-between">
-                                <a class="nav-link wbdv-module-item-title active" href="#">
+                                <a class="nav-link wbdv-module-item-title" href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                                     Module 1 - Requirements Analysis <span class="sr-only">(current)</span>
                                 </a>
                                 <button class="btn btn-lg wbdv-module-item-delete-btn"><i class="fas fa-times"></i></button>
                             </div>
                         </li>
-                        <li class="nav-item wbdv-module-item">
+                        <li style="background-color: darksalmon" class="nav-item wbdv-module-item rounded">
                             <div class="row" style="flex-wrap: nowrap; justify-content: space-between">
                                 <a class="nav-link wbdv-module-item-title active" href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
@@ -58,27 +57,27 @@
                                 <button class="btn btn-lg wbdv-module-item-delete-btn"><i class="fas fa-times"></i></button>
                             </div>
                         </li>
-                        <li class="nav-item wbdv-module-item">
+                        <li class="nav-item wbdv-module-item rounded">
                             <div class="row" style="flex-wrap: nowrap; justify-content: space-between">
-                                <a class="nav-link wbdv-module-item-title active" href="#">
+                                <a class="nav-link wbdv-module-item-title " href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                                     Module 3 -  UI Design I <span class="sr-only">(current)</span>
                                 </a>
                                 <button class="btn btn-lg wbdv-module-item-delete-btn"><i class="fas fa-times"></i></button>
                             </div>
                         </li>
-                        <li class="nav-item wbdv-module-item">
+                        <li class="nav-item wbdv-module-item rounded">
                             <div class="row" style="flex-wrap: nowrap; justify-content: space-between">
-                                <a class="nav-link wbdv-module-item-title active" href="#">
+                                <a class="nav-link wbdv-module-item-title " href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                                     Module 4 -  UI Design II <span class="sr-only">(current)</span>
                                 </a>
                                 <button class="btn btn-lg wbdv-module-item-delete-btn"><i class="fas fa-times"></i></button>
                             </div>
                         </li>
-                        <li class="nav-item wbdv-module-item">
+                        <li class="nav-item wbdv-module-item rounded">
                             <div class="row" style="flex-wrap: nowrap; justify-content: space-between">
-                                <a class="nav-link wbdv-module-item-title active" href="#">
+                                <a class="nav-link wbdv-module-item-title " href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                                     Module 5 -  Functional Testing<span class="sr-only">(current)</span>
                                 </a>
@@ -86,9 +85,9 @@
                             </div>
 
                         </li>
-                        <li class="nav-item wbdv-module-item">
+                        <li class="nav-item wbdv-module-item rounded">
                             <div class="row" style="flex-wrap: nowrap; justify-content: space-between">
-                                <a class="nav-link wbdv-module-item-title active" href="#">
+                                <a class="nav-link wbdv-module-item-title " href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                                     Module 6 -  Component Frameworks<span class="sr-only">(current)</span>
                                 </a>
@@ -96,22 +95,22 @@
                             </div>
 
                         </li>
-                        <li class="nav-item wbdv-module-item" style="text-align: center">
+                        <li class="nav-item wbdv-module-item-add-btn" style="text-align: center">
                                 <button type="button" class="btn btn-lg wbdv-module-item-add-btn">
-                                    <i class="fas fa-plus-circle" style="color: red"></i>
+                                    <i class="fas fa-plus-circle fa-2x"></i>
                                 </button>
                         </li>
                     </ul>
                 </div>
             </nav>
 
-            <div class="container">
-                <div class="row wbdv-topic-pill-list">
-                    <div class="col-2">
+            <div class="container" style="background-color: aliceblue">
+                <div class="row wbdv-topic-pill-list" style="align-items: center">
+                    <div class="col-2" style="align-items: center">
                         <h3 class="wbdv-topic-pill">Topic 1</h3>
                     </div>
                     <div class="col-2">
-                        <h3 class="wbdv-topic-pill">Topic 2</h3>
+                        <h3 class="wbdv-topic-pill" style="font-style: italic; background: darksalmon">Topic 2</h3>
                     </div>
                     <div class="col-2">
                         <h3 class="wbdv-topic-pill">Topic 3</h3>
@@ -121,18 +120,20 @@
                     </div>
                     <div class="col-2">
                         <button type="button" class="btn btn-lg wbdv-topic-add-btn">
-                            <i class="fas fa-plus-circle" style="color: red"></i>
+                            <i class="fas fa-plus-circle fa-lg" style="color: red"></i>
                         </button>
                     </div>
                 </div>
-                <div class="row" style="display: flex; justify-content: flex-end">
+                <div class="row" style="display: flex; justify-content: flex-end; padding-bottom: 7px">
                     <div class="col-3" style="display: flex; justify-content: space-around">
-                        <a class="btn btn-outline-primary wbdv-button wbdv-login" href="#">Save</a>
+                        <a class="btn btn-success wbdv-button wbdv-login" href="#">Save</a>
                         <h6 style="padding: 10px">Preview</h6>
                         <i class="fas fa-link fa-lg" style="padding-bottom: 10px; padding-top: 10px"></i>
                     </div>
                 </div>
-                <div class="container" style="border: 2px solid black">
+
+
+                <div class="container wbdv-widget">
                     <div class="row">
                         <div class="col-8">
                             <h2> Heading Widget</h2>
@@ -172,9 +173,129 @@
                         <h1>Heading Text</h1>
                     </div>
                 </div>
+                <div class="container wbdv-widget">
+                    <div class="row">
+                        <div class="col-8">
+                            <h2> Paragraph Widget</h2>
+                        </div>
+                        <div class="col-4" style="flex-wrap: nowrap; justify-content: space-around">
+                            <button type="button" class="btn btn-lg">
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                            <button type="button" class="btn btn-lg">
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                            <label>
+                                <select class="form-control" >
+                                    <option>Paragraph 1</option>
+                                </select>
+                            </label>
+                            <button type="button" class="btn btn-lg">
+                                <i class="far fa-times-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row" style="justify-content: center">
+                        <input style="width: 85%" placeholder="Paragraph Text">
+                    </div>
+                    <div class="row" style="justify-content: center">
+                        <select class="form-control" style="width: 85%">
+                            <option>Paragraph 1</option>
+                        </select>
+                    </div>
+                    <div class="row" style="justify-content: center">
+                        <input style="width: 85%" placeholder="Widget Name">
+                    </div>
+                    <div class="row">
+                        <h3>Preview</h3>
+                    </div>
+                    <div class="row">
+                        <h1>Paragraph Text</h1>
+                    </div>
+                </div>
+                <div class="container wbdv-widget" >
+                    <div class="row">
+                        <div class="col-8">
+                            <h2> List Widget</h2>
+                        </div>
+                        <div class="col-4" style="flex-wrap: nowrap; justify-content: space-around">
+                            <button type="button" class="btn btn-lg">
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                            <button type="button" class="btn btn-lg">
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                            <label>
+                                <select class="form-control" >
+                                    <option>List 1</option>
+                                </select>
+                            </label>
+                            <button type="button" class="btn btn-lg">
+                                <i class="far fa-times-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row" style="justify-content: center">
+                        <input style="width: 85%" placeholder="List Text">
+                    </div>
+                    <div class="row" style="justify-content: center">
+                        <select class="form-control" style="width: 85%">
+                            <option>List 1</option>
+                        </select>
+                    </div>
+                    <div class="row" style="justify-content: center">
+                        <input style="width: 85%" placeholder="Widget Name">
+                    </div>
+                    <div class="row">
+                        <h3>Preview</h3>
+                    </div>
+                    <div class="row">
+                        <h1>List Text</h1>
+                    </div>
+                </div>
+                <div class="container wbdv-widget" >
+                    <div class="row">
+                        <div class="col-8">
+                            <h2> Image Widget</h2>
+                        </div>
+                        <div class="col-4" style="flex-wrap: nowrap; justify-content: space-around">
+                            <button type="button" class="btn btn-lg">
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                            <button type="button" class="btn btn-lg">
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                            <label>
+                                <select class="form-control" >
+                                    <option>Image 1</option>
+                                </select>
+                            </label>
+                            <button type="button" class="btn btn-lg">
+                                <i class="far fa-times-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row" style="justify-content: center">
+                        <input style="width: 85%" placeholder="Image Title">
+                    </div>
+                    <div class="row" style="justify-content: center">
+                        <select class="form-control" style="width: 85%">
+                            <option>Image 1</option>
+                        </select>
+                    </div>
+                    <div class="row" style="justify-content: center">
+                        <input style="width: 85%" placeholder="Widget Name">
+                    </div>
+                    <div class="row">
+                        <h3>Preview</h3>
+                    </div>
+                    <div class="row">
+                        <h1>Image</h1>
+                    </div>
+                </div>
                 <div class="row" style="justify-content: flex-end">
                     <button type="button" class="btn btn-lg">
-                        <i class="fas fa-plus-circle" style="color: red"></i>
+                        <i class="fas fa-plus-circle fa-3x" style="color: red"></i>
                     </button>
                 </div>
             </div>

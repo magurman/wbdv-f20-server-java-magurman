@@ -4,16 +4,22 @@
     padding: 10px;
 }
 
-.wbdv-owner {
+@media only screen and (max-width: 900px){
+    .wbdv-owner {
+        display: none;
+    }
+    thead {
+        display: none;
+    }
+
+    .wbdv-modified-date {
+        display: none;
+    }
 
 }
 
-.wbdv-title {
-
-}
 
 .wbdv-last-modified {
-
 }
 
 .wbdv-grid-layout {

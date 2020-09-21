@@ -7,11 +7,12 @@
 }
 
 .wbdv-course-title {
-
+    font-weight: bold;
 }
 
 .wbdv-lesson-tabs {
-
+    background-color: cornsilk;
+    border-radius: 5px;
 }
 
 .wbdv-lesson-add-btn {
@@ -23,11 +24,13 @@
 }
 
 .wbdv-module-item {
+    border-radius: 5px;
+    margin: 0 0 7px 0;
+    background-color: cornsilk;
 
 }
 
 .wbdv-module-item-title {
-
     font-size: 22px;
 }
 
@@ -40,11 +43,14 @@
 }
 
 .wbdv-topic-pill-list {
-
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .wbdv-topic-pill {
-
+    text-align: center;
+    border-radius: 5px;
 }
 
 .wbdv-topic-add-btn {
@@ -56,9 +62,21 @@
     align-items: center;
 }
 
-fas {
-    color: red;
+.row {
+    padding: 5px;
 }
 
+h1 h3 {
+    margin: 2px;
+}
 
+.top-navbar{
+    justify-content: space-between;
+}
+
+.wbdv-widget {
+    margin-bottom: 15px;
+    border: 2px solid gainsboro;
+    border-radius: 25px;
+}
 
