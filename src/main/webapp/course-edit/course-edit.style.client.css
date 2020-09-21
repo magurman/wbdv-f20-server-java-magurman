@@ -28,6 +28,7 @@
 
 .wbdv-module-item-title {
 
+    font-size: 22px;
 }
 
 .wbdv-module-item-delete-btn {
@@ -49,3 +50,15 @@
 .wbdv-topic-add-btn {
 
 }
+
+.center-icon i li {
+    display: flex;
+    align-items: center;
+}
+
+fas {
+    color: red;
+}
+
+
+
